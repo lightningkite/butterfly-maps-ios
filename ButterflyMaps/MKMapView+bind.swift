@@ -1,6 +1,6 @@
 //
 //  MKMapView+bind.swift
-//  KhrysalisMaps
+//  ButterflyMaps
 //
 //  Created by Joseph Ivie on 10/28/19.
 //  Copyright © 2019 Lightning Kite. All rights reserved.
@@ -8,7 +8,7 @@
 
 import Foundation
 import MapKit
-import Khrysalis
+import Butterfly
 
 public extension MKMapCamera {
     var zoom: Float {
@@ -126,7 +126,7 @@ public extension MKMapView {
 //            let coords = self.convert(gr.locationInView(self), toCoo(in: : self)
             let coords = self.convert(gr.location(in: self), toCoordinateFrom: self)
             delegate.suppressAnimation = true
-            position.value = coords.toKhrysalis()
+            position.value = coords.toButterfly()
             delegate.suppressAnimation = false
         }
     }
@@ -148,7 +148,7 @@ public extension MKMapView {
             case .ending, .canceling:
                 if let coordinate = (view.annotation as? MKPointAnnotation)?.coordinate, !suppress {
                     suppress = true
-                    position.value = coordinate.toKhrysalis()
+                    position.value = coordinate.toButterfly()
                     suppress = false
                 }
                 view.dragState = .none
