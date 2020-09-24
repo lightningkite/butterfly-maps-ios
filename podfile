@@ -2,7 +2,7 @@
 platform :ios, '11.0'
 use_modular_headers!
 
-target 'KhrysalisMaps' do
-    pod 'Khrysalis', :path => '~/StudioProjects/khrysalis/khrysalis.podspec'
+target 'ButterflyMaps' do
+    pod 'Butterfly', :path => '~/StudioProjects/butterfly/butterfly.podspec'
     pod 'GoogleMaps'
 end
