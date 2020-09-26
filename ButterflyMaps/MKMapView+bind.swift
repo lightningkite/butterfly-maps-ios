@@ -18,12 +18,12 @@ public extension MKMapCamera {
 
 public extension MKMapView {
 
-    func bind(dependency: ViewDependency, style: String? = nil) {
+    func bind(dependency: ViewControllerAccess, style: String? = nil) {
         //Not sure how to style MKMapView?
     }
 
     func bindView(
-        dependency: ViewDependency,
+        dependency: ViewControllerAccess,
         position: ObservableProperty<GeoCoordinate?>,
         zoomLevel: Float = 15,
         animate: Bool = true,
@@ -32,7 +32,7 @@ public extension MKMapView {
         bindView(dependency, position, zoomLevel, animate)
     }
     func bindView(
-        _ dependency: ViewDependency,
+        _ dependency: ViewControllerAccess,
         _ position: ObservableProperty<GeoCoordinate?>,
         _ zoomLevel: Float = 15,
         _ animate: Bool = true,
@@ -71,7 +71,7 @@ public extension MKMapView {
     }
     
     func bindSelect(
-        dependency: ViewDependency,
+        dependency: ViewControllerAccess,
         position: MutableObservableProperty<GeoCoordinate?>,
         zoomLevel: Float = 15,
         animate: Bool = true,
@@ -80,7 +80,7 @@ public extension MKMapView {
         bindSelect(dependency, position, zoomLevel, animate)
     }
     func bindSelect(
-        _ dependency: ViewDependency,
+        _ dependency: ViewControllerAccess,
         _ position: MutableObservableProperty<GeoCoordinate?>,
         _ zoomLevel: Float = 15,
         _ animate: Bool = true,
