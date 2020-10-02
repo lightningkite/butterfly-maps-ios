@@ -1,0 +1,14 @@
+
+# QR Views
+
+- id: com.google.android.gms.maps.MapView
+  type: type
+  template:
+    pattern: MKMapView
+    imports: [MapKit]
+  xib:
+    name: view
+    deferTo: android.view.View
+    defaults:
+      attribute/customClass: MKMapView
+      attribute/customModule: MapKit
