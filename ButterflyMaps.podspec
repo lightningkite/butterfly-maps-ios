@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
 
   s.license = "GPL"
   s.author = { "Captain" => "joseph@lightningkite.com" }
-  s.platform = :ios, "11.0"
+  s.platform = :ios, "10.0"
   s.source = { :git => "https://github.com/lightningkite/butterfly-maps-ios.git", :tag => "#{s.version}" }
   s.source_files =  "ButterflyMaps/**/*.swift" # path to your classes. You can drag them into their own folder.
 
