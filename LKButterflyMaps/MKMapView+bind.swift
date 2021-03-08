@@ -1,6 +1,6 @@
 //
 //  MKMapView+bind.swift
-//  ButterflyMaps
+//  LKButterflyMaps
 //
 //  Created by Joseph Ivie on 10/28/19.
 //  Copyright © 2019 Lightning Kite. All rights reserved.
@@ -8,7 +8,7 @@
 
 import Foundation
 import MapKit
-import Butterfly
+import LKButterfly
 
 public extension MKMapCamera {
     var zoom: Float {
@@ -40,31 +40,36 @@ public extension MKMapView {
     ) {
         self.bind(dependency: dependency, style: style)
         var annotation: MKPointAnnotation? = nil
-        position.addAndRunWeak(self) { (self, value) in
-            if let value = value {
-                let point = annotation ?? {
-                    let new = MKPointAnnotation()
-                    new.coordinate = value.toIos()
-                    self.addAnnotation(new)
-                    return new
-                }()
-                let view = self.view(for: point)
-                view?.isDraggable = true
-                point.coordinate = value.toIos()
-                annotation = point
-                self.setCenter(value.toIos(), animated: true)
-                
-                let location = CLLocationCoordinate2D(latitude: value.latitude, longitude: value.longitude)
-                let region = MKCoordinateRegion( center: location, latitudinalMeters: CLLocationDistance(exactly: (22 - zoomLevel) * 100)!, longitudinalMeters: CLLocationDistance(exactly: (22 - zoomLevel) * 100)!)
-                self.setRegion(self.regionThatFits(region), animated: animate)
-                
-            } else {
-                if let point = annotation {
-                    self.removeAnnotation(point)
+        position.subscribeBy(
+            onError: {_ in },
+            onComplete: { },
+            onNext: { value in
+                if let value = value {
+                    let point = annotation ?? {
+                        let new = MKPointAnnotation()
+                        new.coordinate = value.toIos()
+                        self.addAnnotation(new)
+                        return new
+                    }()
+                    let view = self.view(for: point)
+                    view?.isDraggable = true
+                    point.coordinate = value.toIos()
+                    annotation = point
+                    self.setCenter(value.toIos(), animated: true)
+                    
+                    let location = CLLocationCoordinate2D(latitude: value.latitude, longitude: value.longitude)
+                    let region = MKCoordinateRegion( center: location, latitudinalMeters: CLLocationDistance(exactly: (22 - zoomLevel) * 100)!, longitudinalMeters: CLLocationDistance(exactly: (22 - zoomLevel) * 100)!)
+                    self.setRegion(self.regionThatFits(region), animated: animate)
+                    
+                } else {
+                    if let point = annotation {
+                        self.removeAnnotation(point)
+                    }
+                    annotation = nil
                 }
-                annotation = nil
             }
-        }
+        ).until(self.removed)
+
         self.onClick {
             dependency.openMap(coordinate: position.value ?? GeoCoordinate(latitude: 39.161913, longitude: -142.788386))
         }
@@ -89,35 +94,40 @@ public extension MKMapView {
         self.bind(dependency: dependency, style: style)
         let delegate = SelectDelegate(position)
         var annotation: MKPointAnnotation? = nil
-        position.addAndRunWeak(self) { [unowned delegate] (self, value) in
-            if let value = value {
-                if !delegate.suppress {
-                    delegate.suppress = true
-                    let point = annotation ?? {
-                        let new = MKPointAnnotation()
-                        new.coordinate = value.toIos()
-                        self.addAnnotation(new)
-                        return new
-                    }()
-                    let view = self.view(for: point)
-                    view?.isDraggable = true
-                    point.coordinate = value.toIos()
-                    annotation = point
-                    delegate.suppress = false
-                    if !delegate.suppressAnimation {
-                        self.setCenter(value.toIos(), animated: true)
-                        let location = CLLocationCoordinate2D(latitude: value.latitude, longitude: value.longitude)
-                        let region = MKCoordinateRegion( center: location, latitudinalMeters: CLLocationDistance(exactly: (22 - zoomLevel)*100)!, longitudinalMeters: CLLocationDistance(exactly: (22 - zoomLevel)*100)!)
-                        self.setRegion(self.regionThatFits(region), animated: true)
+        position.subscribeBy(
+            onError: {_ in },
+            onComplete: { },
+            onNext: { value in
+                if let value = value {
+                    if !delegate.suppress {
+                        delegate.suppress = true
+                        let point = annotation ?? {
+                            let new = MKPointAnnotation()
+                            new.coordinate = value.toIos()
+                            self.addAnnotation(new)
+                            return new
+                        }()
+                        let view = self.view(for: point)
+                        view?.isDraggable = true
+                        point.coordinate = value.toIos()
+                        annotation = point
+                        delegate.suppress = false
+                        if !delegate.suppressAnimation {
+                            self.setCenter(value.toIos(), animated: true)
+                            let location = CLLocationCoordinate2D(latitude: value.latitude, longitude: value.longitude)
+                            let region = MKCoordinateRegion( center: location, latitudinalMeters: CLLocationDistance(exactly: (22 - zoomLevel)*100)!, longitudinalMeters: CLLocationDistance(exactly: (22 - zoomLevel)*100)!)
+                            self.setRegion(self.regionThatFits(region), animated: true)
+                        }
                     }
+                } else {
+                    if let point = annotation {
+                        self.removeAnnotation(point)
+                    }
+                    annotation = nil
                 }
-            } else {
-                if let point = annotation {
-                    self.removeAnnotation(point)
-                }
-                annotation = nil
             }
-        }
+        ).until(self.removed)
+        
         self.delegate = delegate
         self.retain(as: "delegate", item: delegate, until: removed)
         
