@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23CFB40425F68D21001BAE75 /* MKMapView+bind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CFB3FE25F68D20001BAE75 /* MKMapView+bind.swift */; };
+		23CFB40725F68D21001BAE75 /* ButterflyMaps.h in Headers */ = {isa = PBXBuildFile; fileRef = 23CFB40125F68D20001BAE75 /* ButterflyMaps.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23CFB44D25F68F46001BAE75 /* ButterflyMapsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CFB44C25F68F46001BAE75 /* ButterflyMapsTests.swift */; };
 		5EE748612367610700EB5B6E /* ButterflyMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EE748572367610600EB5B6E /* ButterflyMaps.framework */; };
-		5EE748662367610700EB5B6E /* ButterflyMapsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE748652367610700EB5B6E /* ButterflyMapsTests.swift */; };
-		5EE748682367610700EB5B6E /* ButterflyMaps.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EE7485A2367610600EB5B6E /* ButterflyMaps.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5EE7499923677C4900EB5B6E /* MKMapView+bind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE7499823677C4900EB5B6E /* MKMapView+bind.swift */; };
 		9B6DC8BBFB2C43B8FE38D422 /* libPods-ButterflyMaps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3236833AE852CE53883FA061 /* libPods-ButterflyMaps.a */; platformFilter = ios; };
+		DF132A7D9616B204DCE9C9CB /* libPods-ButterflyMapsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 564E83C62DAD4BD960CF4B36 /* libPods-ButterflyMapsTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,16 +26,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D1ECC24406F49A31740E7A5 /* Pods-ButterflyMapsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterflyMapsTests.release.xcconfig"; path = "Target Support Files/Pods-ButterflyMapsTests/Pods-ButterflyMapsTests.release.xcconfig"; sourceTree = "<group>"; };
+		23CFB3FE25F68D20001BAE75 /* MKMapView+bind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKMapView+bind.swift"; sourceTree = "<group>"; };
+		23CFB3FF25F68D20001BAE75 /* xib.swift.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = xib.swift.yaml; sourceTree = "<group>"; };
+		23CFB40025F68D20001BAE75 /* fqnames.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fqnames.txt; sourceTree = "<group>"; };
+		23CFB40125F68D20001BAE75 /* ButterflyMaps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButterflyMaps.h; sourceTree = "<group>"; };
+		23CFB40225F68D20001BAE75 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23CFB40325F68D21001BAE75 /* map.swift.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = map.swift.yaml; sourceTree = "<group>"; };
+		23CFB44825F68F46001BAE75 /* ButterflyMapsTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ButterflyMapsTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		23CFB44B25F68F46001BAE75 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23CFB44C25F68F46001BAE75 /* ButterflyMapsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButterflyMapsTests.swift; sourceTree = "<group>"; };
 		3049F7CEE9926210ED3BD051 /* Pods-ButterflyMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterflyMaps.release.xcconfig"; path = "Target Support Files/Pods-ButterflyMaps/Pods-ButterflyMaps.release.xcconfig"; sourceTree = "<group>"; };
 		3236833AE852CE53883FA061 /* libPods-ButterflyMaps.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ButterflyMaps.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		564E83C62DAD4BD960CF4B36 /* libPods-ButterflyMapsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ButterflyMapsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EE748572367610600EB5B6E /* ButterflyMaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ButterflyMaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5EE7485A2367610600EB5B6E /* ButterflyMaps.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButterflyMaps.h; sourceTree = "<group>"; };
-		5EE7485B2367610600EB5B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EE748602367610700EB5B6E /* ButterflyMapsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButterflyMapsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5EE748652367610700EB5B6E /* ButterflyMapsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyMapsTests.swift; sourceTree = "<group>"; };
-		5EE748672367610700EB5B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5EE7499823677C4900EB5B6E /* MKMapView+bind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+bind.swift"; sourceTree = "<group>"; };
 		7AA8C5E8101C5C8C8F8DCE22 /* Pods-ButterflyMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterflyMaps.debug.xcconfig"; path = "Target Support Files/Pods-ButterflyMaps/Pods-ButterflyMaps.debug.xcconfig"; sourceTree = "<group>"; };
+		A368BE99F48CBD8DE4AC032B /* Pods-ButterflyMapsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterflyMapsTests.debug.xcconfig"; path = "Target Support Files/Pods-ButterflyMapsTests/Pods-ButterflyMapsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EE748612367610700EB5B6E /* ButterflyMaps.framework in Frameworks */,
+				DF132A7D9616B204DCE9C9CB /* libPods-ButterflyMapsTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,9 +89,12 @@
 		5EE748592367610600EB5B6E /* ButterflyMaps */ = {
 			isa = PBXGroup;
 			children = (
-				5EE7485A2367610600EB5B6E /* ButterflyMaps.h */,
-				5EE7485B2367610600EB5B6E /* Info.plist */,
-				5EE7499823677C4900EB5B6E /* MKMapView+bind.swift */,
+				23CFB40125F68D20001BAE75 /* ButterflyMaps.h */,
+				23CFB40025F68D20001BAE75 /* fqnames.txt */,
+				23CFB40225F68D20001BAE75 /* Info.plist */,
+				23CFB40325F68D21001BAE75 /* map.swift.yaml */,
+				23CFB3FE25F68D20001BAE75 /* MKMapView+bind.swift */,
+				23CFB3FF25F68D20001BAE75 /* xib.swift.yaml */,
 			);
 			path = ButterflyMaps;
 			sourceTree = "<group>";
@@ -90,8 +102,9 @@
 		5EE748642367610700EB5B6E /* ButterflyMapsTests */ = {
 			isa = PBXGroup;
 			children = (
-				5EE748652367610700EB5B6E /* ButterflyMapsTests.swift */,
-				5EE748672367610700EB5B6E /* Info.plist */,
+				23CFB44C25F68F46001BAE75 /* ButterflyMapsTests.swift */,
+				23CFB44B25F68F46001BAE75 /* Info.plist */,
+				23CFB44825F68F46001BAE75 /* ButterflyMapsTests-Bridging-Header.h */,
 			);
 			path = ButterflyMapsTests;
 			sourceTree = "<group>";
@@ -100,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				3236833AE852CE53883FA061 /* libPods-ButterflyMaps.a */,
+				564E83C62DAD4BD960CF4B36 /* libPods-ButterflyMapsTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -109,6 +123,8 @@
 			children = (
 				7AA8C5E8101C5C8C8F8DCE22 /* Pods-ButterflyMaps.debug.xcconfig */,
 				3049F7CEE9926210ED3BD051 /* Pods-ButterflyMaps.release.xcconfig */,
+				A368BE99F48CBD8DE4AC032B /* Pods-ButterflyMapsTests.debug.xcconfig */,
+				0D1ECC24406F49A31740E7A5 /* Pods-ButterflyMapsTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -120,7 +136,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EE748682367610700EB5B6E /* ButterflyMaps.h in Headers */,
+				23CFB40725F68D21001BAE75 /* ButterflyMaps.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +151,6 @@
 				5EE748522367610600EB5B6E /* Headers */,
 				5EE748532367610600EB5B6E /* Sources */,
 				5EE748542367610600EB5B6E /* Frameworks */,
-				5EE748552367610600EB5B6E /* Resources */,
-				D14E16CFE88DCBFA1F7E36DB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -151,9 +165,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5EE7486E2367610700EB5B6E /* Build configuration list for PBXNativeTarget "ButterflyMapsTests" */;
 			buildPhases = (
+				4CDFB705C2562FE9F56EE8F2 /* [CP] Check Pods Manifest.lock */,
 				5EE7485C2367610700EB5B6E /* Sources */,
 				5EE7485D2367610700EB5B6E /* Frameworks */,
-				5EE7485E2367610700EB5B6E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -177,10 +191,11 @@
 				TargetAttributes = {
 					5EE748562367610600EB5B6E = {
 						CreatedOnToolsVersion = 11.0;
-						LastSwiftMigration = 1100;
+						LastSwiftMigration = 1240;
 					};
 					5EE7485F2367610700EB5B6E = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -203,24 +218,29 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		5EE748552367610600EB5B6E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5EE7485E2367610700EB5B6E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXShellScriptBuildPhase section */
+		4CDFB705C2562FE9F56EE8F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ButterflyMapsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		CE9BB121C9AC7DF1704FC3C1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -243,23 +263,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D14E16CFE88DCBFA1F7E36DB /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ButterflyMaps/Pods-ButterflyMaps-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ButterflyMaps/Pods-ButterflyMaps-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ButterflyMaps/Pods-ButterflyMaps-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -267,7 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EE7499923677C4900EB5B6E /* MKMapView+bind.swift in Sources */,
+				23CFB40425F68D21001BAE75 /* MKMapView+bind.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EE748662367610700EB5B6E /* ButterflyMapsTests.swift in Sources */,
+				23CFB44D25F68F46001BAE75 /* ButterflyMapsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,8 +470,10 @@
 		};
 		5EE7486F2367610700EB5B6E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A368BE99F48CBD8DE4AC032B /* Pods-ButterflyMapsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EF4N5K3F2Q;
 				INFOPLIST_FILE = ButterflyMapsTests/Info.plist;
@@ -479,6 +484,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lightningkite.ButterflyMapsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ButterflyMapsTests/ButterflyMapsTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -486,8 +493,10 @@
 		};
 		5EE748702367610700EB5B6E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D1ECC24406F49A31740E7A5 /* Pods-ButterflyMapsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EF4N5K3F2Q;
 				INFOPLIST_FILE = ButterflyMapsTests/Info.plist;
@@ -498,6 +507,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lightningkite.ButterflyMapsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ButterflyMapsTests/ButterflyMapsTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

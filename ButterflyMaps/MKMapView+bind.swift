@@ -8,7 +8,7 @@
 
 import Foundation
 import MapKit
-import Butterfly
+import LKButterfly
 
 public extension MKMapCamera {
     var zoom: Float {
