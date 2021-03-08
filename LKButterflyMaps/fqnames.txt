@@ -1,4 +1,4 @@
-ButterflyMaps
+LKButterflyMaps
 com.lightningkite.butterfly.maps.bind
 com.lightningkite.butterfly.maps.bindView
 com.lightningkite.butterfly.maps.bindSelect

@@ -2,10 +2,10 @@
 platform :ios, '11.0'
 use_modular_headers!
 
-target 'ButterflyMaps' do
+target 'LKButterflyMaps' do
     pod 'LKButterfly/Core'
 end
 
-target 'ButterflyMapsTests' do
+target 'LKButterflyMapsTests' do
     pod 'LKButterfly/Core'
 end
