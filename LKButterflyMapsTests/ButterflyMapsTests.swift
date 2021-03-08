@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import ButterflyMaps
+@testable import LKButterflyMaps
 
 class ButterflyMapsTests: XCTestCase {
 

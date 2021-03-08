@@ -1,6 +1,6 @@
 //
 //  MKMapView+bind.swift
-//  ButterflyMaps
+//  LKButterflyMaps
 //
 //  Created by Joseph Ivie on 10/28/19.
 //  Copyright © 2019 Lightning Kite. All rights reserved.

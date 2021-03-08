@@ -2,7 +2,7 @@
 platform :ios, '10.0'
 use_modular_headers!
 
-target 'ButterflyMaps' do
+target 'LKButterflyMaps' do
     pod 'LKButterfly', :path => '~/StudioProjects/butterfly/lkbutterfly.podspec'
     pod 'GoogleMaps'
 end
