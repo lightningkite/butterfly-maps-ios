@@ -56,23 +56,6 @@
   type: get
   template: ~this~.getMinZoom()
 
-# LatLng
-- id: com.google.android.gms.maps.model.LatLng
-  type: type
-  template:
-    pattern: LatLng
-    imports:
-      LatLng: leaflet
-
-# CameraUpdate
-- id: com.google.android.gms.maps.CameraUpdate
-  type: type
-  template:
-    pattern: [LatLngExpression, number]
-    imports:
-      LatLngExpression: leaflet
-      ZoomPanOptions: leaflet
-
 # moveCamera
 - id: com.google.android.gms.maps.GoogleMap.moveCamera
   type: call
